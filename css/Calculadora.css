@@ -1,0 +1,96 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+#titulo {
+    position: relative;
+    right: 0px;
+    top:  30px;
+    width: 930px;
+    height: 45px;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 10px;
+}
+
+body {
+    background: url(../imagen/algebra-de-baldor-portada.jpg) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -background-size: cover;
+    
+    /*Color del texto*/
+    color: #000000;
+}
+
+#textoCal {
+    position: relative;
+    left: 60px;
+    top: 80px;
+    font-size: 30px;
+    font-family: century;
+    font: blod;
+}
+
+#tablaCal {
+    position: relative;
+    right: 120px;
+    top: 100px;
+    padding: 15px 15px;
+    height: 350px;
+    background-color: steelblue;
+    border-radius: 20px 20px;
+    border: 2px solid #000000;
+}
+
+.boton {
+    font-style: italic;
+    background-color: silver;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 10px;
+}
+
+.botonOp {
+    font-style: italic;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 10px;
+}
+
+.botonIgual {
+    background-color: skyblue;
+    font-size: 24px;
+    color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 20px;
+}
+
+.botonCE {
+    background-color: orange;
+    font-style: oblique;
+    font-size: 18px;
+    color: orangered;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px 30px;
+}
+
+.texto {
+    background-color: mediumspringgreen;
+    text-align: right;
+    font-family: monospace;
+    font-size: 25px;
+    width: 214px;
+    height: 50px;
+    border-radius: 5px 5px;
+}

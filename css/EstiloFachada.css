@@ -1,0 +1,40 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background: url(../imagen/sprinfield.jpg) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -background-size: cover;
+    
+    /*Color del texto*/
+    color: #000000;
+}
+
+#centrarTitulo {
+    position: relative;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 30px;
+    background: #C0C0C0;
+}
+
+#centrar {
+    margin: 20px 0px 0px 0px;
+    position: relative;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 30px;
+}
+
+#simpson {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 1350;
+    height: 800;
+}
+

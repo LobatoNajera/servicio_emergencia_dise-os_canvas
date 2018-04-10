@@ -1,0 +1,143 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background: #D0D0D0;
+    
+    /*
+    background: url(../imagen/Fondo1.jpg) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -background-size: cover;
+    
+    Color del texto
+    color: #000000;
+    */
+}
+
+#centrarTituloFace {
+    position: relative;
+    text-align: center;
+    border: 0px solid #000;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #08088A;
+    color: #FFFFFF;
+}
+
+.centrar {
+    text-align: center;
+    /*border: 1px solid #000;*/
+    width: 520;
+    height: 30;
+    background: #08088A;
+    padding: 10px 40px 10px 40px;
+}
+
+.botonComentar {
+    font-size: 18;
+    color: #FFFFFF;
+    border-color: blue;
+    background: #013ADF;
+    width: 100;
+    height: 30;
+}
+
+.etiquetaComentar {
+    width: 350;
+    height: 30;
+    position: relative;
+    right: 10;
+}
+
+.centrarImagen {
+    text-align: center;
+    width: 400
+}
+
+.centrarComentarioCodigo {
+    text-align: center;
+    width: 600;
+    height: auto;
+    background: #E0E0E0;
+}
+
+.barraLike {
+    position: relative;
+    right: 100;
+    color: blue;
+}
+
+.barraCompartir {
+    position: relative;
+    left: 100;
+    color: blue;
+}
+
+.centrarComentarioCreado {
+    text-align: center;
+    width: 560;
+    height: 40;
+    margin: 0 10 0 10;
+    padding: 10;
+    background: #D0D0D0;
+}
+
+.txtComentarioCreado {
+    width: 300;
+    height: 25;
+}
+
+.editarComentarioCreado {
+    position: relative;
+    right: 25;
+    color: blue;
+}
+
+.eliminarComentarioCreado {
+    position: relative;
+    right: 12;
+    color: blue;
+}
+
+.fechaComentarioCreado {
+    position: relative;
+    right: 0;
+    color: #606060;
+}
+
+.editarComentario {
+    position: absolute;
+    text-align: center;
+    padding: 25 0 0 0;
+    margin: 10;
+    width: 400px;
+    height: 120px;
+    border: 3px solid #A0A0A0;
+    background: #08088A;
+    color: #FFFFFF;
+    left: 200;
+    top: 300
+}
+
+.editarTxtComentario {
+    width: 350;
+    height: 30;
+    margin: 5 5 15 5;
+}
+
+.botonEditado {
+    font-size: 18;
+    color: #FFFFFF;
+    border-color: blue;
+    background: #013ADF;
+    width: 100;
+    height: 30;
+    margin: 0 30 0 20
+}
+
+

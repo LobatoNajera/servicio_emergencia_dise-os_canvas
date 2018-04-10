@@ -1,0 +1,10 @@
+body {
+    background: url(/imagen/Fondo1.jpg) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -background-size: cover;
+    
+    /*Color del texto*/
+    color: #000000;
+}

@@ -1,0 +1,38 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background: url(../imagen/Fondo1.jpg) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -background-size: cover;
+    
+    /*Color del texto*/
+    color: #000000;
+}
+
+#centrarTitulo {
+    position: relative;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 30px;
+    background: #C0C0C0;
+}
+
+#imgDiaMuertos {
+    position: relative;
+    text-align: center;
+    top: 0px;
+}
+
+#centrar {
+    position: relative;
+    text-align: center;
+    
+    padding: 60px;
+    top: -410
+}
+

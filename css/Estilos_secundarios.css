@@ -1,0 +1,31 @@
+#inicio {
+    position: absolute;
+    left: 20px;
+    top: 2.5px;
+    width: 70px;
+    height: 70px;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+#imagenDescripcion {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 210px;
+    height: 250px;
+    background-color: powderblue;
+    border: 1px solid #000000;
+    border-radius: 10px 10px;
+}
+/*Policia 01 747 494 5501
+Bomberos 01 747 472 2280*/
+#textoDescripcion_2 {
+    position: relative;
+    right: 0px;
+    top: 40px;
+    width: 210px;
+    height: 180px;
+    font: justify;
+    text-align: center;
+}

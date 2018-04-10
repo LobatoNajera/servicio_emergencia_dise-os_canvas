@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Servicios de emergencias</title>
+        <link rel="stylesheet" href="css/Calculadora.css">
+        <link rel="stylesheet" href="css/Estilos_secundarios.css">
+        <script language="LiveScript">
+            
+            function addChar(input, character) {
+                if(input.value == null || input.value == "0") {
+                    input.value = character;
+                } else {
+                    input.value += character;
+                }
+            }
+            
+            function deleteChar(input) {
+                input.value = input.value.substring(0, input.value.length - 1);
+            }
+            
+            function changeSign(input) {
+                if(input.value.substring(0, 1) == "-") {
+                    input.value = input.value.substring(1, input.value.length)
+                } else {
+                    input.value = "-" + input.value
+                }
+            }
+            
+            function compute(form) {
+                form.display.value = eval(form.display.value);
+            }
+            
+            function square(form) {
+                form.display.value = eval(form.display.value) * eval(form.display.value)
+            }
+            
+            function checkNum(str) {
+                for (var i = 0; i < str.length; i++) {
+                    var ch = str.substring(i, i+1)
+                    if (ch < "0" || ch > "9") {
+                        if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "(" && ch!= ")") {
+                        alert("invalid entry!")
+                        return false
+                        }
+                    }
+                }
+                
+                return true
+            }
+        </script>
+    </head>
+    <body>
+        <div id="titulo">
+            Calculadora
+            <div>
+                <a href="index.html">
+                    <img src="imagen/inicio.jpg" id="inicio">
+                </a>
+            </div>
+        </div>
+        
+        <form id="posicion">
+            <table id="tablaCal">
+                <tr>
+                    <td colspan="4"><input class="texto" name="display" id="campodetexto" type="text" value="0"></td>
+                </tr>    
+                <tr>
+                    <td><input class="boton" type="button" value="7" onClick="addChar(this.form.display, '7')"></td>
+                    
+                    <td><input class="boton" type="button" value="8" onClick="addChar(this.form.display, '8')"></td>
+                    
+                    <td><input class="boton" type="button" value="9" onClick="addChar(this.form.display, '9')"></td>
+                    
+                    <td><input class="botonOp" type="button" value="+" onClick="addChar(this.form.display, '+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="boton" type="button" value="4" onClick="addChar(this.form.display, '4')"></td>
+                    
+                    <td><input class="boton" type="button" value="5" onClick="addChar(this.form.display, '5')"></td>
+                    
+                    <td><input class="boton" type="button" value="6" onClick="addChar(this.form.display, '6')"></td>
+                    
+                    <td><input class="botonOp" type="button" value="-" onClick="addChar(this.form.display, '-')"></td>
+                </tr> 
+                <tr>
+                    <td><input class="boton" type="button" value="1" onClick="addChar(this.form.display, '1')"></td>
+                    
+                    <td><input class="boton" type="button" value="2" onClick="addChar(this.form.display, '2')"></td>
+                    
+                    <td><input class="boton" type="button" value="3" onClick="addChar(this.form.display, '3')"></td>
+                    
+                    <td><input class="botonOp" type="button" value="x" onClick="addChar(this.form.display, '*')"></td>
+                </tr>  
+                <tr>
+                    <td><input class="botonCE" type="button" value="CE " onClick="this.form.display.value = 0 "></td>
+                    
+                    <td><input class="boton" type="button" value="0" onClick="addChar(this.form.display, '0')"></td>
+                    
+                    <td><input class="botonIgual" type="button" value="=" onClick="if (checkNum(this.form.display.value))
+                        { compute(this.form) }"></td>
+                    <td><input class="botonOp" type="button" value="/" onClick="addChar(this.form.display, '/')"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

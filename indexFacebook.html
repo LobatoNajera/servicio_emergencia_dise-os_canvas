@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Programacion web</title>
+        <link rel="stylesheet" href="css/EstiloFacebook.css">
+        <link rel="stylesheet" href="css/Estilos_secundarios.css">
+        <script src="javascript/scriptFacebook.js"></script>
+    </head>
+    <body>
+        <div id="centrarTituloFace">
+            <h1>Facebook</h1>
+            <div>
+                <a href="index.html"><img src="imagen/inicio.jpg" id="inicio"></a>
+            </div>
+        </div>
+        
+        <div class="centrarComentarioCodigo">
+            
+            <img src="imagen/14.jpg" class="centrarImagen">
+            
+            <div>
+                <a id="btnLikeFoto" class="barraLike" onclick="likeImagen()">Me gusta  0</a>
+                <a class="barraCompartir">Compartir</a>
+            </div>
+            
+            
+            <div id="comentarios"></div>
+            
+            
+        </div>
+        
+        <div class="centrar">
+            <input type="text" class="etiquetaComentar" id="txtComentar">
+            
+            <button type="button" id="comentar" onclick="agregarCom()" class="botonComentar">Comentar</button>
+        </div>
+        
+        <div id="editarComentariosTxt">
+            
+        </div>
+        
+    </body>
+</html>
+
